@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    border-radius: 20%;
+}
+  
+
+.container {
+    margin: 0 -5px;
+    padding: 100px;
+}
+  
+  /* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+  
+  /* Style the counter cards */
+.card {
+    transition: all .3s;
+    filter: grayscale(20%) blur(1px);
+    transform: scale(0px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 7%;
+    background-color: #f1f1f1;
+}
+
+.card:hover {
+    transition: all .3s;
+    filter: grayscale(0%) blur(0px);
+
+}
+
+.imgAnime {
+    transition: all .3s;
+    transform: scale(1);
+}
+
+.imgAnime:hover {
+    z-index: 1;
+    transition: all .3s;
+    transform: scale(0.9);
+}
+
+img {
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.name {
+    padding: 5px 0px;
+}
+
+.center {
+    text-align: center;
+}
